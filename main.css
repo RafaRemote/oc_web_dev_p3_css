@@ -1,0 +1,339 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Devon';
+    src:url('fonts/Devonshire-Regular.ttf.woff') format('woff'),
+        url('fonts/Devonshire-Regular.ttf.svg#Devonshire-Regular') format('svg'),
+        url('fonts/Devonshire-Regular.ttf.eot'),
+        url('fonts/Devonshire-Regular.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Dekko";
+    src:url('fonts/Dekko-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Chic";
+    src: url('fonts/chic.ttf');
+}
+
+@font-face {
+    font-family: 'Chic_menu';
+    src:url('Munson-Bold.ttf.woff') format('woff'),
+        url('Munson-Bold.ttf.svg#Munson-Bold') format('svg'),
+        url('Munson-Bold.ttf.eot'),
+        url('Munson-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+.green {
+    background-color: #579c87;
+}
+
+.gold { 
+    background-color: #fdcb46;
+}
+
+#main_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    background-color: #579c87;
+    color: #fdcb46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    letter-spacing: -2px;
+    z-index: 10;
+}
+
+main {
+    width: 390px;
+    height: 67vh;
+    position: relative;
+    top: 15vh;
+    bottom: 20vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+article {
+    width: 180px;
+    height: 250px;
+    background-color: black;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 1px 2px 2px rgba(0,0,0,5%), -1px -1px 2px 2px rgba(0,0,0, 5%);
+}
+
+
+
+
+.menu:first-of-type {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+
+
+
+
+.menu:hover {
+    transform-origin: center;
+    transform: scale(2);
+    opacity: 0;
+    transition: 3s all;
+}
+
+#resto_one > .menu > h2:first-of-type {
+    font-family: 'Devon', 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+#resto_two > h2:first-of-type {
+    font-family: "Chic", 'Courier New', Courier, monospace;
+    font-size: 13px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    background-image: linear-gradient(135deg, rgb(227,136,8), rgb(150,102,251));
+    background-size: 100%;
+    background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    transform: translateY(20px);
+}
+
+#resto_two > p {
+    font-family: "Chic_menu";
+    font-weight: bold;
+    font-size: 22px;
+    color: rgb(227,136,8);
+}
+.menu > p:first-of-type {
+    font-style: italic;
+    font-size: 20px;
+    transform: translateY(-20px);
+}
+.menu > p {
+
+}
+
+.menu > .container_note {
+    transform: scale(0.15) translateY(200px);
+}
+
+#resto_one {
+    background-color: #fae0dc;
+    
+}
+#resto_two {
+    background-color: hsl(306, 100%, 98%);
+
+}
+#resto_three {
+    align-self: flex-end;
+
+}
+#resto_four {
+    align-self: flex-end;
+
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 18px;
+    color: #fdcb46;
+ 
+}
+
+#prochainement {
+    width: 170px;
+    height: 5vh;
+    padding: 10px;
+    background-color: #579c87;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-10px);
+    letter-spacing: 1.5px;
+    justify-self: flex-start;
+   
+}
+
+#container_mention_contact {
+    width: 100vw;
+    height: 5vh;
+    margin-top: 2vh;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-content: center;
+    background-color: #579c87;
+    text-align: center;
+  
+}
+
+#mention {
+    width: 33vw;
+    height: 5vh;
+    padding-left: 10px;
+}
+
+#contact {
+    width: 33vw;
+    height: 5vh;
+}
+
+
+@media only screen and (max-width: 168px) {
+    main {
+        height: 2500px;
+        flex-direction: column;
+        border: 10px solid red;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    article {
+        width: 60%;
+        height: 500px;
+        
+        
+    }
+
+    #resto_three {
+        align-self: center;
+    
+    }
+    #resto_four {
+        align-self: center;
+    
+    }
+}
+
+/* déclaration pour la création du logo en forme de note */
+
+.container_note {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: #fae0dc;
+    transform-origin: center;
+    transform: scale(0.35) translateX(-30px);
+}
+
+.note {
+    width: 50px;
+    height: 45px;
+    border-radius: 60% 40%;
+    background-color: #ee5d61;
+    position: relative;
+    top: 50px;
+    left: 0;
+    z-index: 2;
+}
+
+.rond{
+    width: 50px;
+    height: 45px;
+    border-radius: 60% 40%;
+    background-color: #f29169;
+    position: relative;
+    left: 100px;
+    bottom: 20px;
+}
+
+.branche {
+    width: 10px;
+    height: 118px;
+    background-color: #f29169;
+    position: relative;
+    left: 40px;
+    bottom: 99px;
+}
+
+.branche2 {
+    width: 10px;
+    height: 120px;
+    background-color: #ee5d61;
+    position: relative;
+    left: -100px;
+    bottom: -20px;
+}
+
+.patte1 {
+    width: 110px;
+    height: 12px;
+    background: rgb(238,81,96);
+    background: linear-gradient(90deg, rgba(238,81,96,1) 0%, rgba(242,143,102,1) 100%);
+    position: relative;
+    bottom: 200px;
+    right: 60px;
+    transform-origin: left;
+    transform: skewY(-10deg);
+    z-index: 10;
+}
+
+.patte2 {
+    width: 110px;
+    height: 12px;
+    background: rgb(238,81,96);
+    background: linear-gradient(90deg, rgba(238,81,96,1) 0%, rgba(242,143,102,1) 100%);
+    position: relative;
+    bottom: 190px;
+    right: 60px;
+    transform-origin: left;
+    transform: skewY(-10deg);
+    z-index: 10;
+}
+
+/* fin déclatations note */
