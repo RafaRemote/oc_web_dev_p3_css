@@ -23,20 +23,44 @@ body {
 }
 
 @font-face{
-    font-family: "Chic";
+    font-family: "chic";
     src: url('fonts/chic.ttf');
+}
+
+@font-face{
+    font-family: "croissant";
+    src: url('fonts/croissant.ttf');
 }
 
 @font-face {
     font-family: 'Chic_menu';
-    src:url('Munson-Bold.ttf.woff') format('woff'),
-        url('Munson-Bold.ttf.svg#Munson-Bold') format('svg'),
-        url('Munson-Bold.ttf.eot'),
-        url('Munson-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    src:url('font/Munson-Bold.ttf.woff') format('woff'),
+        url('fonts/Munson-Bold.ttf.svg#Munson-Bold') format('svg'),
+        url('fontsMunson-Bold.ttf.eot'),
+        url('fontsMunson-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'delice';
+    src:url('fonts/delice.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'delice_main';
+    src:url('fonts/delice_main.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'palette';
+    src:url('fonts/palette.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 
 .green {
@@ -75,7 +99,7 @@ header {
 
 main {
     width: 390px;
-    height: 67vh;
+    height: 70vh;
     position: relative;
     top: 15vh;
     bottom: 20vh;
@@ -86,7 +110,7 @@ main {
 
 article {
     width: 180px;
-    height: 250px;
+    height: 235px;
     background-color: black;
     overflow: hidden;
     display: flex;
@@ -126,10 +150,9 @@ article {
 }
 
 #resto_two > h2:first-of-type {
-    font-family: "Chic", 'Courier New', Courier, monospace;
+    font-family: "Croissant", 'Courier New', Courier, monospace;
     font-size: 13px;
     text-align: center;
-    letter-spacing: 0.75px;
     background-image: linear-gradient(135deg, rgb(227,136,8), rgb(150,102,251));
     background-size: 100%;
     background-repeat: repeat;
@@ -137,20 +160,56 @@ article {
         -webkit-text-fill-color: transparent; 
     transform: translateY(20px);
 }
+#resto_three > h2:first-of-type {
+    font-family: "delice", 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    background: linear-gradient(135deg, rgb(0,28,216), rgb(11,139,251));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  transform: translateY(10px);
+}
+
+#resto_four > h2:first-of-type {
+    font-family: "palette", 'Courier New', Courier, monospace;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.75px;
+    background: linear-gradient(135deg, rgb(61, 147, 58), rgb(190, 255, 127));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    transform: translateY(10px);
+}
+
 
 #resto_two > p {
     font-family: "Chic_menu";
-    font-weight: bold;
+    font-weight: 900;
     font-size: 22px;
     color: rgb(227,136,8);
+}
+
+
+#resto_three > p {
+    font-family: "delice_main";
+    font-size: 24px;
+    color: rgb(11, 139, 251);
+    transform: skewX(10deg) translateY(-15px);
+
+}
+
+#resto_four > p {
+    font-family: "delice_main";
+    font-size: 24px;
+    color: rgb(106, 190, 72);
+    transform: skewX(10deg) translateY(-15px);
+
 }
 .menu > p:first-of-type {
     font-style: italic;
     font-size: 20px;
     transform: translateY(-20px);
-}
-.menu > p {
-
 }
 
 .menu > .container_note {
@@ -166,11 +225,12 @@ article {
 
 }
 #resto_three {
-    align-self: flex-end;
+    background-color: hsl(180, 6%, 93%);
 
 }
 #resto_four {
-    align-self: flex-end;
+    background-color: hsl(120, 100%, 100%);
+   
 
 }
 
