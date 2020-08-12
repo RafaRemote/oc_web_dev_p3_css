@@ -29,7 +29,7 @@ body {
 
 header {    
     width: 100vw;
-    height: 22vh;
+    height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -151,8 +151,8 @@ section {
 }
 
 img {
-    width: 25vw;
-    flex-shrink: 3;
+    width: 200px;
+    flex-shrink: 4;
     align-self: center;
 }
 
@@ -168,6 +168,7 @@ h2 {
          transparent 10.01%) 
          no-repeat left bottom / 0 100%;
     transition: background-size .5s;
+    flex-shrink: 1;
 }
 
 h2:hover {
@@ -204,9 +205,39 @@ footer {
     transform: scale(0.2) translateY(-100px);
    }
 
+  
+
 #last_p {
     float: left;
     font-family: "Devon", 'Courier New', Courier, monospace;
     font-size: 28px;
     transform: translateX(-45px);
+}
+
+@media only screen and (max-width:568px) {
+
+    img {
+        width: 20vw;
+    }
+
+    .met {
+        height: auto;
+    }
+
+    .name {
+        width: 60%;
+        height: auto;
+    }
+    
+
+}
+
+@media only screen and (min-width: 768px) {
+    #container_menu_1 {
+        width: 768px;
+        margin: auto;
+    }
+    header {
+        width: 768px;
+    }
 }

@@ -283,6 +283,27 @@ a {
     animation: load1 2.5s infinite;
 }
 
+#scroll {
+    width: 10px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: white;
+    z-index: 10;
+    margin-left: 15px;
+    transform: translateY(-50px);
+    animation: on_off 4s ease-in-out infinite;
+    
+}
+
+
+
+#scroll_text {
+    text-align: center;
+    transform-origin: center;
+    transform: rotate(-90deg) translateX(-25px);
+}
 
 @keyframes load1 {
 
@@ -318,6 +339,22 @@ a {
     55% { opacity: 1; }
     80% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+@keyframes on_off {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+
 }
 
 
@@ -359,6 +396,7 @@ footer {
     
 }
 
+
 @keyframes wiggle {
     0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-2deg); }
@@ -374,35 +412,52 @@ footer {
 
 }
 
+#scroll {
+    display: none;
+}
 
 
 
 
+@media only screen and (max-width: 568px) {
 
-@media only screen and (max-width: 168px) {
+#main_container {
+    width: 100vw;
+
+}
+
     main {
-        height: 2500px;
+        width: 80%;
+        height: 600px;
+        top: 125px;
+        margin: auto;
         flex-direction: column;
-        border: 10px solid red;
-        justify-content: space-evenly;
-        align-items: center;
+        flex-wrap: nowrap;
+        overflow: scroll;
+        border: 1px solid #579c87;
+        box-shadow: 0 0 1px 1px #579c87;
     }
+    
 
     article {
-        width: 60%;
+        width: 100%;
         height: 500px;
-        
+        margin-bottom: 25px;
         
     }
 
-    #resto_three {
-        align-self: center;
-    
+    #prochainement {
+        position: relative;
+        top: 0;
+       
+       
     }
-    #resto_four {
-        align-self: center;
-    
+
+    #scroll {
+        display: flex;
     }
+
+   
 }
 
 /* déclaration pour la création du logo en forme de note */
