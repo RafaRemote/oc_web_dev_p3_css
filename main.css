@@ -457,6 +457,9 @@ footer {
 
     #scroll {
         display: flex;
+        position: relative;
+        left: -220px;
+        
     }
 
    
