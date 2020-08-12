@@ -20,16 +20,44 @@ body {
 }
 
 
+@font-face {
+    font-family: "Dekko";
+    src:url('../fonts/Dekko-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #container_menu_1 {
     width: 100vw;
 }
 
-header {    
-    width: 100vw;
+
+.header_pages {    
+    width: 100%;
+    margin-top: 400px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+}
+
+header {    
+    width: 100vw;
+    height: 80px;
+    background-color: #579c87;
+    color: #fdcb46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    letter-spacing: -2px;
+    z-index: 10;
+    font-family: 'Dekko', Arial, Helvetica, sans-serif;
 }
 
 h1 {
@@ -133,7 +161,36 @@ h2:hover {
      transform: translateY(-10px);
  }
 
+ #footer_pages {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #579c87;
+    
+    font-family: arial;
+    
+}
 
+
+#footer_pages > a {
+    text-decoration: none;
+    color: #fdcb46;
+    
+}
+
+
+#mentions {
+    padding-left: 20px;
+}
+
+#contact {
+    padding-right: 20px;
+}
 
 @media only screen and (max-width:568px) {
 
@@ -154,13 +211,13 @@ h2:hover {
 }
 
 @media only screen and (min-width:768px) {
+
+
+
     #container_menu_1 {
         
         width: 768px;
         margin: auto;
-    }
-    header {
-        width: 768px;
     }
     .moment {
       width: 768px;
