@@ -36,8 +36,8 @@ header {
     font-size: 32px;
     font-weight: bold;
     position: fixed;
-    top: 0px;
-    left: 0px;
+    top: 0;
+    left: 0;
     letter-spacing: -2px;
     z-index: 10;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -125,7 +125,7 @@ h2 {
     height: 20px;
     font-size: 18px;
     text-align: center;
-    flex-shrink: 0 0 30vw;   
+    flex-shrink: 0;   
     letter-spacing: 1.3px;
     background: linear-gradient(
         to top,
