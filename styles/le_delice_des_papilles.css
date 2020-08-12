@@ -82,7 +82,7 @@ main {
 }
 
 .line {
-    width: 30vw;
+    width: 250px;
     height: 4px;
     border: 4px solid;
     border-radius: 50px 0 0 0;
@@ -90,7 +90,8 @@ main {
     border-left: none;
     border-bottom: none;
     transform: skewX(30deg) rotateX(180deg);
-    flex-grow: 3;
+    flex-basis: 250px;
+    
     
 }
 
@@ -125,7 +126,7 @@ h2 {
     height: 20px;
     font-size: 18px;
     text-align: center;
-    flex-shrink: 0;   
+    flex-grow: 3;   
     letter-spacing: 1.3px;
     background: linear-gradient(
         to top,
@@ -238,5 +239,8 @@ h2:hover {
     }
     .met {
         width: 768px;
+    }
+    .line {
+        width: 300px;
     }
 }

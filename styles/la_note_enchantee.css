@@ -174,7 +174,7 @@ section {
 
 img {
     width: 200px;
-    flex-shrink: 4;
+    flex-grow: 1;
     align-self: center;
 }
 
@@ -190,7 +190,7 @@ h2 {
          transparent 10.01%) 
          no-repeat left bottom / 0 100%;
     transition: background-size .5s;
-    flex-shrink: 1;
+    flex-grow: 2;
 }
 
 h2:hover {
@@ -230,10 +230,8 @@ footer {
     height: 50px;
     display: flex;
     justify-content: space-between;
-    justify-content: center;
     align-items: center;
     background-color: #579c87;
-    
     font-family: arial;
     
 }
@@ -277,6 +275,8 @@ footer {
 }
 
 @media only screen and (max-width:568px) {
+
+
 
     footer {
         padding-bottom: 50px;
