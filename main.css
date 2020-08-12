@@ -34,10 +34,10 @@ body {
 
 @font-face {
     font-family: 'Chic_menu';
-    src:url('font/Munson-Bold.ttf.woff') format('woff'),
+    src:url('fonts/Munson-Bold.ttf.woff') format('woff'),
         url('fonts/Munson-Bold.ttf.svg#Munson-Bold') format('svg'),
-        url('fontsMunson-Bold.ttf.eot'),
-        url('fontsMunson-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+        url('fonts/Munson-Bold.ttf.eot'),
+        url('fonts/Munson-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -62,14 +62,6 @@ body {
     font-style: normal;
 }
 
-
-.green {
-    background-color: #579c87;
-}
-
-.gold { 
-    background-color: #fdcb46;
-}
 
 #main_container {
     width: 100vw;
@@ -121,8 +113,6 @@ article {
 }
 
 
-
-
 .menu:first-of-type {
     width: 100%;
     height: 30%;
@@ -133,15 +123,31 @@ article {
    
 }
 
+.menu_b {
+    width: 100%;
+}
 
-
-
+a {
+    text-decoration: none;
+    color: black;
+}
 
 .menu:hover {
-    transform-origin: center;
-    transform: scale(2);
-    opacity: 0;
-    transition: 3s all;
+    
+    transform: scale(1.5);
+    opacity: 0.1;
+    transition: 4s all;
+}
+
+.menu_b:hover {
+    transform: scale(1.5);
+    opacity: 0.1;
+    transition: 4s all;
+
+}
+
+.menu > p,h2 {
+    color: #3c1218;
 }
 
 #resto_one > .menu > h2:first-of-type {
@@ -149,7 +155,7 @@ article {
     font-size: 18px;
 }
 
-#resto_two > h2:first-of-type {
+#resto_two > .menu_b > h2:first-of-type {
     font-family: "Croissant", 'Courier New', Courier, monospace;
     font-size: 13px;
     text-align: center;
@@ -160,50 +166,53 @@ article {
         -webkit-text-fill-color: transparent; 
     transform: translateY(20px);
 }
-#resto_three > h2:first-of-type {
+#resto_three > .menu_b > h2:first-of-type {
     font-family: "delice", 'Courier New', Courier, monospace;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.75px;
     background: linear-gradient(135deg, rgb(0,28,216), rgb(11,139,251));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  transform: translateY(10px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        transform: translateY(10px);
 }
 
-#resto_four > h2:first-of-type {
+#resto_four > .menu_b > h2:first-of-type {
     font-family: "palette", 'Courier New', Courier, monospace;
     font-size: 16px;
     text-align: center;
     letter-spacing: 0.75px;
     background: linear-gradient(135deg, rgb(61, 147, 58), rgb(190, 255, 127));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    transform: translateY(10px);
-}
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        transform: translateY(10px);
+ }
 
 
-#resto_two > p {
+#resto_two > .menu_b > p {
     font-family: "Chic_menu";
-    font-weight: 900;
+    font-weight: 400;
     font-size: 22px;
     color: rgb(227,136,8);
+    text-align: center;
 }
 
 
-#resto_three > p {
+#resto_three > .menu_b > p {
     font-family: "delice_main";
     font-size: 24px;
     color: rgb(11, 139, 251);
     transform: skewX(10deg) translateY(-15px);
+    text-align: center;
 
 }
 
-#resto_four > p {
+#resto_four > .menu_b > p {
     font-family: "delice_main";
     font-size: 24px;
     color: rgb(106, 190, 72);
     transform: skewX(10deg) translateY(-15px);
+    text-align: center;
 
 }
 .menu > p:first-of-type {

@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(180, 6%, 93%);
+    color: hsl(353, 42%, 19%);
+    font-family: "delice_main", 'Courier New', Courier, monospace;
+   
+}
+
+@font-face {
+    font-family: 'delice';
+    src:url('fonts/delice.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'delice_main';
+    src:url('fonts/delice_main.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#container_menu_1 {
+    width: 100vw;
+}
+
+header {    
+    width: 100vw;
+    height: 24vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: 'Delice', 'Courier New', Courier, monospace;
+    letter-spacing: 1.1px;
+    background: linear-gradient(135deg, rgb(0,28,216), rgb(11,139,251));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.moment {
+    width: 90vw;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+.line {
+    width: 30vw;
+    height: 4px;
+    border: 4px solid;
+    border-radius: 50px 0 0 0;
+    border-right: none;
+    border-left: none;
+    border-bottom: none;
+    transform: skewX(30deg) rotateX(180deg);
+    flex-grow: 3;
+    
+}
+
+
+.line:nth-of-type(2) {
+    transform: rotateY(-180deg) rotateX(180deg);
+}
+
+
+#entree > .moment > .line {
+    border-color: hsl(239, 96%, 44%);
+}
+
+#plat_principal > .moment > .line {
+    border-color: hsl(215, 90%, 54%);
+}
+
+#dessert > .moment > .line {
+    border-color: hsl(203, 92%, 59%);
+}
+
+
+
+
+section > .met:last-of-type{
+    padding-bottom: 40px;
+}
+
+
+h2 {
+    width: 50vw;
+    height: 20px;
+    font-size: 18px;
+    text-align: center;
+    flex-shrink: 0 0 30vw;
+    
+    letter-spacing: 1.3px;
+}
+
+.met {
+    display: flex;
+    width: 80vw;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 30px; 
+
+}
+
+.name {
+    width: 80%;
+    font-size: 16px;
+    padding-left: 30px;
+
+}
+ .prix {
+     font-size: 20px;
+     transform: translateY(-10px);
+ }
