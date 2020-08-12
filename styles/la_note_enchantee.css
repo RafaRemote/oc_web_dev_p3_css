@@ -25,15 +25,35 @@ body {
 
 #container_menu_1 {
     width: 100vw;
+    margin-bottom: 300px;
 }
 
-header {    
-    width: 100vw;
+.header_pages {    
+    width: 100%;
+    margin-top: 400px;
     height: 200px;
     display: flex;
     justify-content: center;
     align-items: center;
     
+}
+
+header {
+
+    width: 100vw;
+    height: 80px;
+    background-color: #579c87;
+    color: #fdcb46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    letter-spacing: -2px;
+    z-index: 10;
 }
 
 h1 {
@@ -132,7 +152,7 @@ main {
     align-items: center;
 }
 section {
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -201,6 +221,27 @@ footer {
     align-items: flex-end;
 }
 
+#footer_pages {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #579c87;
+    
+    font-family: arial;
+    
+}
+
+#footer_pages > a {
+    text-decoration: none;
+    color: #fdcb46;
+    
+}
+
 #note2 {
     transform: scale(0.2) translateY(-100px);
    }
@@ -214,7 +255,23 @@ footer {
     transform: translateX(-45px);
 }
 
+#mentions {
+    padding-left: 10px;
+}
+
+#contact {
+    padding-right: 10px;
+}
+
 @media only screen and (max-width:568px) {
+
+    footer {
+        padding-bottom: 50px;
+    }
+
+    .header_pages {
+        margin-top: 550px;
+    }
 
     img {
         width: 20vw;
@@ -237,7 +294,7 @@ footer {
         width: 768px;
         margin: auto;
     }
-    header {
+    .header_pages {
         width: 768px;
     }
 }
