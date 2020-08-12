@@ -284,27 +284,6 @@ a {
     animation: load1 2.5s infinite;
 }
 
-#scroll {
-    width: 10px;
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background: white;
-    z-index: 10;
-    margin-left: 15px;
-    transform: translateY(-50px);
-    animation: on_off 4s ease-in-out infinite;
-    
-}
-
-
-
-#scroll_text {
-    text-align: center;
-    transform-origin: center;
-    transform: rotate(-90deg) translateX(-25px);
-}
 
 @keyframes load1 {
 
@@ -340,22 +319,6 @@ a {
     55% { opacity: 1; }
     80% { opacity: 0; }
     100% { opacity: 0; }
-}
-
-@keyframes on_off {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-
-
 }
 
 
@@ -430,7 +393,7 @@ footer {
 
     main {
         width: 80%;
-        height: 600px;
+        
         top: 125px;
         margin: auto;
         flex-direction: column;
@@ -438,8 +401,13 @@ footer {
         overflow: scroll;
         border: 1px solid #579c87;
         box-shadow: 0 0 1px 1px #579c87;
+        margin-bottom: 50px;
+
     }
     
+    #container_menu_1 {
+        padding-bottom: 200px;
+    }
 
     article {
         width: 100%;
@@ -447,20 +415,43 @@ footer {
         margin-bottom: 25px;
         
     }
-
-    #prochainement {
-        position: relative;
-        top: 0;
-       
-       
+    #resto_one > .menu > h2:first-of-type, p {
+        font-size: 40px;
+    }
+    #resto_two > .menu_b > h2:first-of-type, p {
+        font-size: 40px;
+    }
+    #resto_three > .menu_b > h2:first-of-type, p {
+        font-size: 40px;
+    }
+    #resto_four > .menu_b > h2:first-of-type, p {
+        font-size: 40px;
     }
 
-    #scroll {
-        display: flex;
-        position: relative;
-        left: -220px;
-        
+#resto_one > .menu > p {
+    font-size: 40px;
+}
+
+#resto_two > .menu_b > p {
+   font-size: 40px;
+}
+
+
+#resto_three > .menu_b > p {
+  font-size: 40px;
+
+}
+
+#resto_four > .menu_b > p {
+   font-size: 40px;
+
+}
+
+    #prochainement > p {
+        font-size: 18px;
     }
+
+    
 
    
 }
