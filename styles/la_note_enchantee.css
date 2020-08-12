@@ -212,14 +212,14 @@ h2:hover {
 }
 
 
-
 footer {
     width: 400px;
     margin: auto;
-    height: 10vh;
+    
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 #footer_pages {
@@ -233,7 +233,6 @@ footer {
     align-items: center;
     background-color: #579c87;
     font-family: arial;
-    
 }
 
 #footer_pages > a {
