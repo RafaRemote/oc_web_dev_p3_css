@@ -20,12 +20,6 @@ body {
 }
 
 
-@font-face {
-    font-family: "Dekko";
-    src:url('../fonts/Dekko-Regular.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
 
 #container_menu_1 {
@@ -49,8 +43,7 @@ header {
     left: 0px;
     letter-spacing: -2px;
     z-index: 10;
-    font-family: 'Dekko', Arial, Helvetica, sans-serif;
-
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
@@ -182,11 +175,20 @@ h2:hover {
 
 
 #mentions {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #contact {
-    padding-right: 20px;
+    padding-right: 40px;
+}
+
+
+#contact:hover {
+    animation: wiggle 1s;
+}
+
+#mentions:hover {
+    animation: wiggle 1s;
 }
 
 

@@ -378,9 +378,6 @@ footer {
     padding-left: 40px;
 }
 
-#mention:hover {
-    animation: wiggle 1s;
-}
 
 #contact {
     padding-right: 40px;
@@ -388,6 +385,10 @@ footer {
 }
 
 #contact:hover {
+    animation: wiggle 1s;
+}
+
+#mention:hover {
     animation: wiggle 1s;
 }
 

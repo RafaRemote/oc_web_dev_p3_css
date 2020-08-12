@@ -54,6 +54,7 @@ header {
     left: 0px;
     letter-spacing: -2px;
     z-index: 10;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h1 {
@@ -256,11 +257,20 @@ footer {
 }
 
 #mentions {
-    padding-left: 20px;
+    padding-left: 40px;
 }
 
 #contact {
-    padding-right: 20px;
+    padding-right: 40px;
+}
+
+
+#contact:hover {
+    animation: wiggle 1s;
+}
+
+#mentions:hover {
+    animation: wiggle 1s;
 }
 
 @media only screen and (max-width:568px) {
