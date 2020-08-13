@@ -13,3 +13,34 @@
   100% { transform: translate(1px, -2px) rotate(-2deg); }
 
 }
+
+
+@keyframes load1 {
+
+  0% { opacity: 1; }
+  55% { opacity: 1; }
+  80% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+
+@keyframes load2
+{
+    0% { opacity: 0; }
+    9% { opacity: 0; }
+    10% { opacity: 1; }
+    55% { opacity: 1; }
+    80% { top: 80px; opacity: 0; }
+    100% { top: 0; opacity: 0; }
+}
+
+
+@keyframes load3
+{
+    0% { opacity: 0; }
+    19% { opacity: 0; }
+    20% { opacity: 1; }
+    55% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
+}
