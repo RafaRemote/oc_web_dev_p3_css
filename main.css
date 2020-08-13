@@ -111,6 +111,9 @@ a {
         transform: translateY(10px);
  }
 
+.menu {
+    padding-top: 20px;
+}
 
 .menu > p {
     font-style: italic;
@@ -119,7 +122,8 @@ a {
 }
 
 .menu > .container_note {
-    transform: scale(0.15) translateY(200px);
+    transform: scale(0.2);
+    padding-top: 15px;
 }
 
 
@@ -249,7 +253,7 @@ main {
     top: 125px;
     margin: auto;
     flex-direction: column;
-    margin-bottom: 200px;
+    margin-bottom: 250px;
 }
     
 article {
@@ -258,12 +262,8 @@ article {
     margin-bottom: 25px;        
 }
 
-.font_device {
-    font-size: 36px;
-}
-
 #prochainement {
-    top: 0px;
+    top: -50px;
 }
 
 #prochainement > p {
