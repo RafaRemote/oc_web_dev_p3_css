@@ -65,13 +65,17 @@ section > .met:last-of-type{
         width: 95%;
     }
 
-    h2 {
-        width:20vw;
+    .moment > h2 {
+        font-size: 10px;
+        width: 95%;
+        align-self: flex-start;
+    }
+
+    .moment > img {
+        width: 5%;
     }
     
-   section > .moment {
-        height: 90px;
-    }
+    
 
     section > .met {
         width: 90%;

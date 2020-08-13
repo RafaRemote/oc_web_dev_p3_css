@@ -49,16 +49,13 @@ h2 {
         margin-top: 50px;
     }
 
-    .moment {
-        padding-bottom: 50px;
-    }
 
-    img {
-        width: 10vw;
+    .moment > img {
+        width: 15%;
     }
     
-    h2 {
-        width: 10vw;
+    .moment > h2 {
+        width: 50%;
     }
 
 }

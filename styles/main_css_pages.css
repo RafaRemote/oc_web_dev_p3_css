@@ -148,12 +148,19 @@ h2:hover {
 
 @media only screen and (max-width:568px) {
 
-    img {
-        width: 25vw;
-        flex-shrink: 5;
+   .moment > img {
+        width: 15%;
+        flex-shrink: 10;
     }
 
-    h2 {
+    .moment > .line {
+        width: 15%;
+        flex-shrink: 10;
+    }
+
+
+    .moment > h2 {
+        width: 85%;
         flex-shrink: 1;
     }
 
