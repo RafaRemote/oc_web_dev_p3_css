@@ -65,8 +65,9 @@ section > .met:last-of-type{
         width: 95%;
     }
 
+    
     .moment > h2 {
-        font-size: 10px;
+        font-size: 11px;
         width: 95%;
         align-self: flex-start;
     }
@@ -75,8 +76,6 @@ section > .met:last-of-type{
         width: 5%;
     }
     
-    
-
     section > .met {
         width: 90%;
     }
