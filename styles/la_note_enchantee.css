@@ -20,10 +20,6 @@ section {
     padding-bottom: 40px;
 }
 
-img {
-    transform: translateY(0.2);
-}
-
 img:nth-of-type(even) {
     transform: scaleY(0.75);
 }
