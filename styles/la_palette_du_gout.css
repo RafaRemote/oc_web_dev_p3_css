@@ -20,9 +20,6 @@ section > .met:last-of-type{
     padding-bottom: 50px;
 }
 
-main {  
-    padding-bottom: 200px;
-}
 
 section > .met {
     width: 80%;
@@ -45,6 +42,16 @@ h2 {
  
 
 @media only screen and (max-width:568px) {
+
+        
+    section {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .moment {
+        padding-bottom: 50px;
+    }
 
     img {
         width: 10vw;

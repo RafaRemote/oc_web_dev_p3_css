@@ -11,9 +11,7 @@ h1 {
         -webkit-text-fill-color: transparent; 
 }
 
-main {
-    padding-bottom: 150px;
-}
+
 
 .line {
     width: 150px;
@@ -66,9 +64,19 @@ section > .met > .prix {
 
 @media only screen and (max-width:568px) {
 
+
+    section {
+        width: 90%;
+        margin-top: 50px;
+    }
+
+    .moment  {
+        height: 60px;
+    }
+    
+
     .line {
         width: 15vw;
-        flex-shrink: 5;
     }
 
     
