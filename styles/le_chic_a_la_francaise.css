@@ -1,5 +1,5 @@
 body {
-    background-color: hsl(306, 100%, 98%);
+    background-color: rgb(255, 245, 254);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,6 +37,8 @@ main {
 
 .moment > h2 {
     font-size: 16px;
+    align-self: flex-start;
+    transform: translateY(-5px);
 }
 
 section > .met {
@@ -50,6 +52,7 @@ section > .met {
 img {
     width: 100px;
     transform: scaleY(0.3);
+    align-self: center;
 }
 
 img:nth-of-type(1) {
