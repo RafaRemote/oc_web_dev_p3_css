@@ -4,7 +4,6 @@ body {
     box-sizing: border-box;
 }
 
-
 #main_container {
     width: 100vw;
     display: flex;

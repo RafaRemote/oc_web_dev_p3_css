@@ -3,6 +3,7 @@ body {
 }
 
 h1 {
+    padding: 5px;
     font-size: 50px;    
     font-family: 'Delice', 'Courier New', Courier, monospace;
     letter-spacing: 1.1px;
@@ -11,6 +12,21 @@ h1 {
         -webkit-text-fill-color: transparent; 
 }
 
+
+h2 {
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 255, 1) 0%, 
+        rgba(0, 0, 255, 1) 10%, 
+        transparent 10.01%) 
+        no-repeat left bottom / 0 100%;
+        transition: background-size .5s;
+}
+
+
+h2:hover {
+    background-size: 100% 100%;
+}
 
 
 .line {
