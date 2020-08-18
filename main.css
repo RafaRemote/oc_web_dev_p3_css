@@ -21,13 +21,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
     font-weight: bold;
     position: fixed;
     top: 0;
     left: 0;
     letter-spacing: -2px;
     z-index: 10;
+}
+
+h1 {
+    font-size: 2rem;
 }
 
 main {
