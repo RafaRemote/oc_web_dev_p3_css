@@ -2,6 +2,8 @@
 
 ## Project number 3: Animate a web page with CSS animations
 
+Skills:
+
 - set up a Front-End environment
 - ensure graphic consistency
 - configure a navigational structure for a website
