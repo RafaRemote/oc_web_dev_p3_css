@@ -1,15 +1,11 @@
-# Dynamisez une page web avec des animations CSS.
+# OpenClassrooms / Web Developer Path
 
-Visible à l'adresse: https://rafafacode.github.io/projet_numero_trois/
+## Project number 3: Animate a web page with CSS animations
 
-<br />
-<br />
-<br />
+- set up a Front-End environment
+- ensure graphic consistency
+- configure a navigational structure for a website
+- implement advanced graphical CSS effects
+- use a version control system for project tracking and hosting (what about git ? 😃)
 
-Openclassrooms.
-<br />
-<br />
-Parcours Développeur Web. 
-<br />
-<br />
-Projet numéro 3: Dynamisez une page web avec des animations CSS.
+website address: https://rafaremote.github.io/oc_web_dev_p3_css/
